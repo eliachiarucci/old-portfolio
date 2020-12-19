@@ -5,7 +5,7 @@
       "React",
       "Typescript",
       "Node",
-      "Ant-design",
+      "Ant-Design",
       "Express",
       "MongoDB"
     ],
@@ -53,7 +53,7 @@
   },
   {
     "title": "Line",
-    "technologies": ["React", "Electron", "Ant-design", "Firebase"],
+    "technologies": ["React", "Electron", "Ant-Design", "Firebase"],
     "shortDescription": "A modern software for nutritionists and dietists to make the process of creating diets easier and more streamlined.",
     "description": "",
     "images": ["Line"],
