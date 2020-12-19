@@ -64,7 +64,7 @@
   {
     "title": "Companion",
     "technologies": ["Javascript", "Electron", "HTML", "CSS"],
-    "shortDescription": "My thesis project, a programmable voice assistant made with Electron, nlp.js by AXA for the NLP part, kit.ai's snowboy for the hotword recognition, and google TTS APIs",
+    "shortDescription": "My thesis project, a programmable voice assistant made with Electron, nlp.js by AXA for the NLP part, kit.ai's snowboy for the hotword recognition, and google TTS APIs.",
     "description": "",
     "images": ["Companion"],
     "date": "2020",

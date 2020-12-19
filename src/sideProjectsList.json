@@ -1,18 +1,20 @@
 [
-    {
+  {
     "title": "UltraSonoro",
     "technologies": ["Arduino", "Processing"],
+    "date": "2019",
     "short-description": "",
     "description": "",
-    "images": ["Anthropocene"],
+    "images": ["UltraSonoro"],
     "link": ""
-    },
-    {
+  },
+  {
     "title": "CorpoSonoro",
     "technologies": [],
+    "date": "2018",
     "short-description": "Project made with a Kinect connected to MAX.",
     "description": "",
-    "images": ["Companion"],
+    "images": ["CorpoSonoro"],
     "link": ""
-    }
+  }
 ]

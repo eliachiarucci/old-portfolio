@@ -5,6 +5,7 @@ $main-color: #5500aa
 
 html
   scroll-behavior: smooth
+  overflow-x: hidden
 
 body
   font-family: 'Titillium Web', sans-serif
@@ -91,7 +92,7 @@ body
   .presentation-grid
     display: grid
     grid-template-columns: auto auto
-    grid-template-rows: 75px 75px 75px
+    grid-template-rows: 75px 75px 100px
     column-gap: 90px
     row-gap: 10px
     *
@@ -100,6 +101,7 @@ body
       grid-column-start: 2
       grid-row-start: 1
       grid-row-end: 4
+      align-self: flex-end
 
 @media only screen and (min-width: 0px) and (max-width: 768px)
   .presentation-grid
@@ -233,3 +235,6 @@ body
   width: 35px !important
   height: 35px !important
   object-fit: contain !important
+
+.social-link
+  width: 120px
