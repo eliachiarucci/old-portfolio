@@ -53,13 +53,7 @@
   },
   {
     "title": "Line",
-    "technologies": [
-      "React",
-      "Typescript",
-      "Electron",
-      "Ant-design",
-      "Firebase"
-    ],
+    "technologies": ["React", "Electron", "Ant-design", "Firebase"],
     "shortDescription": "A modern software for nutritionists and dietists to make the process of creating diets easier and more streamlined.",
     "description": "",
     "images": ["Line"],

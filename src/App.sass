@@ -166,15 +166,43 @@ body
     .col-xl-#{$i}
       grid-column: span #{$i}
 
-.project-container
-  border: 5px solid black
-  width: 700px
-  height: 300px
-  img
+@media only screen and (min-width: 0px)
+  .project-container
+    border: 5px solid black
     width: 300px
+    img
+      width: 300px
+      height: 300px
+      object-fit: cover
+  .technologies-grid
+    grid-template-columns: auto auto auto auto
+    grid-template-rows: auto auto
+  .project-info-container
+    //grid-template-rows: 40px 50px auto 50px
+    padding: 25px 20px 30px 20px
+    h2
+      margin: 0
+    h4
+      margin: 0
+
+@media only screen and (min-width: 768px)
+  .project-container
+    border: 5px solid black
+    width: 700px
     height: 300px
-    object-fit: cover
-  title
+    img
+      width: 300px
+      height: 300px
+      object-fit: cover
+  .technologies-grid
+    grid-template-columns: auto auto auto auto auto auto
+  .project-info-container
+    grid-template-rows: 40px 50px auto 50px
+    padding: 25px 20px 30px 20px
+    h2
+      margin: 0
+    h4
+      margin: 0
 
 .text-align-left
   text-align: left
@@ -193,14 +221,6 @@ body
 
 .width-fluid
   width: 100%
-
-.project-info-container
-  grid-template-rows: 40px 50px auto 50px
-  padding: 25px 20px 30px 20px
-  h2
-    margin: 0
-  h4
-    margin: 0
 
 .image
   img

@@ -10,10 +10,10 @@ const Projects = ({ projects }) => {
           key={project.title}
           className="grid row-gap-15 col-sm-12 col-xl-6 project-container"
         >
-          <div className="col-1 image">
+          <div className="col-md-1 col-sm-12 image">
             <img src={`./projects/${project.title}.png`}></img>
           </div>
-          <div className="col-11 grid project-info-container row-gap-5">
+          <div className="col-md-11 col-sm-12 grid project-info-container row-gap-5">
             <div className="title col-9 text-align-left">
               <h2>{project.title}</h2>
             </div>
@@ -24,14 +24,17 @@ const Projects = ({ projects }) => {
             >
               <h4>{project.date}</h4>
             </FlexContainer>
-            <FlexContainer type="horizontal" gap={5} className="col-12">
+            <div
+              type="horizontal"
+              className="grid technologies-grid row-gap-5 column-gap-5 -col-12"
+            >
               {project.technologies.map((skill) => (
                 <img
                   src={`./skills/${skill}.png`}
                   className="project-skill"
                 ></img>
               ))}
-            </FlexContainer>
+            </div>
             <div className="col-12 text-align-left">
               {project.shortDescription}
             </div>
