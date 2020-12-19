@@ -12,18 +12,18 @@ const NavBar = () => {
       alignItems="center"
       gap={30}
     >
-      <Link className="link" to="/">
+      <a className="link" href="#about">
         <div>About Me</div>
         <hr />
-      </Link>
-      <Link className="link" to="/projects">
+      </a>
+      <a className="link" href="#projects">
         <div>Projects</div>
         <hr />
-      </Link>
-      <Link className="link" to="/cv">
+      </a>
+      <a className="link" href="#cv">
         <div>CV</div>
         <hr />
-      </Link>
+      </a>
     </FlexContainer>
   );
 };
