@@ -1,0 +1,10 @@
+[
+    {
+     "title": "Tomino",
+     "technologies": ["React", "Typescript", "NodeJS", "Express", "MongoDB"],
+     "short-description": "A chef-robot that will help you prepare your next cooking masterpiece",
+     "description": "",
+     "images": ["Tomino", ""],
+     "link": ""
+    }
+]
