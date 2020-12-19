@@ -1,10 +1,58 @@
 [
     {
      "title": "Tomino",
-     "technologies": ["React", "Typescript", "NodeJS", "Express", "MongoDB"],
-     "short-description": "A chef-robot that will help you prepare your next cooking masterpiece",
+     "technologies": ["React", "Typescript", "NodeJS", "Ant-design", "Express", "MongoDB", "DigitalOcean"],
+     "short-description": "A chef-robot that will help you prepare your next cooking masterpiece.",
      "description": "",
-     "images": ["Tomino", ""],
+     "images": ["Tomino"],
+     "link": "https://mr-pan-frontend-2u5hk.ondigitalocean.app/"
+    },
+    {
+     "title": "CYBYWY",
+     "technologies": ["Javascript", "HTML", "CSS", "Firebase"],
+     "short-description": "CYBYWY is a tutorial game promoting self-checks for breast and testicular cancer.",
+     "description": "",
+     "images": ["CYBYWY"],
+     "link": "https://eliachiarucci.github.io/CYBWY/"
+     },
+     {
+     "title": "Polpo di Fulmine",
+     "technologies": ["React Native", "PHP"],
+     "short-description": "A food delivery app for a restaurant, the owners also have another app to manage orders, and a web back-end where to manage their food offer. \nThe app supports online payments via Stripe API.",
+     "description": "",
+     "images": ["Polpo"],
+     "link": "https://apps.apple.com/it/app/polpo-di-fulmine/id1473204667"
+     },
+     {
+     "title": "FlexContainer",
+     "technologies": ["React", "Typescript"],
+     "short-description": "FlexContainer is a react component to make flexible layouts easier in React.",
+     "description": "",
+     "images": ["FlexContainer"],
+     "link": "https://www.npmjs.com/package/flexcontainer-react"
+     },
+     {
+     "title": "Line",
+     "technologies": ["React", "Typescript", "Electron", "Ant-design", "Firebase"],
+     "short-description": "A modern software for nutritionists and dietists to make the process of creating diets easier and more streamlined.",
+     "description": "",
+     "images": ["Line"],
      "link": ""
-    }
+     },
+     {
+     "title": "Anthropocene",
+     "technologies": ["Javascript", "HTML", "CSS"],
+     "short-description": "Anthropocene.otf is a free parametric typeface that is linked to an air quality index which dynamically and constantly changes its design, following your local current air status trends.",
+     "description": "",
+     "images": ["Anthropocene"],
+     "link": "https://anthropocene-otf.github.io/"
+     },
+     {
+     "title": "Companion",
+     "technologies": ["Javascript", "Electron", "HTML", "CSS"],
+     "short-description": "My thesis project, a programmable voice assistant made with Electron, nlp.js by AXA for the NLP part, kit.ai's snowboy for the hotword recognition, and google TTS APIs",
+     "description": "",
+     "images": ["Companion"],
+     "link": ""
+     }
 ]
