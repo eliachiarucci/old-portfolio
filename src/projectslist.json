@@ -12,6 +12,7 @@
     "shortDescription": "A chef-robot that will help you prepare your next cooking masterpiece.",
     "description": "",
     "images": ["Tomino"],
+    "multipleImages": false,
     "date": "2020",
     "link": "https://mr-pan-frontend-2u5hk.ondigitalocean.app/"
   },
@@ -21,6 +22,7 @@
     "shortDescription": "CYBYWY is a tutorial game promoting self-checks for breast and testicular cancer.",
     "description": "",
     "images": ["CYBYWY"],
+    "multipleImages": false,
     "date": "2020",
     "link": "https://eliachiarucci.github.io/CYBWY/"
   },
@@ -30,6 +32,7 @@
     "shortDescription": "A food delivery app for a restaurant, the owners also have another app to manage orders, and a web back-end where to manage their food offer. \nThe app supports online payments via Stripe API.",
     "description": "",
     "images": ["Polpo"],
+    "multipleImages": false,
     "date": "2019",
     "link": "https://apps.apple.com/it/app/polpo-di-fulmine/id1473204667"
   },
@@ -39,6 +42,7 @@
     "shortDescription": "FlexContainer is a react component to make flexible layouts easier in React.",
     "description": "",
     "images": ["FlexContainer"],
+    "multipleImages": false,
     "date": "2020",
     "link": "https://www.npmjs.com/package/flexcontainer-react"
   },
@@ -48,6 +52,7 @@
     "shortDescription": "Anthropocene.otf is a free parametric typeface that is linked to an air quality index which dynamically and constantly changes its design, following your local current air status trends.",
     "description": "",
     "images": ["Anthropocene"],
+    "multipleImages": false,
     "date": "2019",
     "link": "https://anthropocene-otf.github.io/"
   },
@@ -56,7 +61,8 @@
     "technologies": ["React", "Electron", "Ant-Design", "Firebase"],
     "shortDescription": "A modern software for nutritionists and dietists to make the process of creating diets easier and more streamlined.",
     "description": "",
-    "images": ["Line"],
+    "images": ["Line.mp4", "Line.png"],
+    "multipleImages": true,
     "date": "2018",
     "link": ""
   },
@@ -67,6 +73,7 @@
     "shortDescription": "My thesis project, a programmable voice assistant made with Electron, nlp.js by AXA for the NLP part, kit.ai's snowboy for the hotword recognition, and google TTS APIs.",
     "description": "",
     "images": ["Companion"],
+    "multipleImages": false,
     "date": "2020",
     "link": ""
   }

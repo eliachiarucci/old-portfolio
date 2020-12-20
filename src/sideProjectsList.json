@@ -5,7 +5,8 @@
     "date": "2019",
     "short-description": "",
     "description": "",
-    "images": ["UltraSonoro"],
+    "images": ["UltraSonoro.mp4", "DSCF5703.jpg"],
+    "multipleImages": true,
     "link": ""
   },
   {
@@ -15,6 +16,23 @@
     "short-description": "Project made with a Kinect connected to MAX.",
     "description": "",
     "images": ["CorpoSonoro"],
+    "multipleImages": true,
+    "link": ""
+  },
+  {
+    "title": "3D Fantasy Models",
+    "technologies": [],
+    "date": "2020",
+    "short-description": "Project made with a Kinect connected to MAX.",
+    "description": "",
+    "images": [
+      "Ascia.jpg",
+      "Scudo.jpg",
+      "Shield.jpg",
+      "Sword.jpg",
+      "TrioProps.jpg"
+    ],
+    "multipleImages": true,
     "link": ""
   }
 ]

@@ -1,8 +1,9 @@
 import FlexContainer from "flexcontainer-react";
 import React from "react";
+import { SRLWrapper, useLightbox } from "simple-react-lightbox-pro";
 
-const Projects = ({ projects }) => {
-  console.log(projects);
+const Projects = ({ projects, handleOpenGallery }) => {
+  const { openLightbox, closeLightbox } = useLightbox();
   return (
     <div className="grid row-gap-20 column-gap-20">
       {projects.map((project) => (
@@ -11,7 +12,13 @@ const Projects = ({ projects }) => {
           className="grid row-gap-15 col-sm-12 col-xl-6 project-container"
         >
           <div className="col-md-1 col-sm-12 image">
-            <img src={`./projects/${project.title}.png`}></img>
+            {project.multipleImages ? (
+              <img
+                src={`./projects/${project.title}/${project.title}.png`}
+              ></img>
+            ) : (
+              <img src={`./projects/${project.title}.png`}></img>
+            )}
           </div>
           <div className="col-md-11 col-sm-12 grid project-info-container row-gap-5">
             <div className="title col-9 text-align-left">
@@ -32,6 +39,7 @@ const Projects = ({ projects }) => {
                 <img
                   src={`./skills/${skill}.png`}
                   className="project-skill"
+                  key={skill}
                 ></img>
               ))}
             </div>
@@ -45,6 +53,15 @@ const Projects = ({ projects }) => {
                     OPEN
                   </button>
                 </a>
+              ) : project.multipleImages ? (
+                <button
+                  className="btn btn-outlined width-fluid btn-a"
+                  onClick={() => {
+                    handleOpenGallery(project);
+                  }}
+                >
+                  OPEN GALLERY
+                </button>
               ) : (
                 <a href={""}>
                   <button className="btn width-fluid btn-a btn-disabled">

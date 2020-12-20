@@ -4,12 +4,17 @@ import ProfilePhoto from "../media/photo6.png";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import ProjectsList from "../projectslist.json";
-import SideProjectsList from "../sideProjectslist.json";
+import SideProjectsList from "../sideProjectsList.json";
+import { SRLWrapper, useLightbox } from "simple-react-lightbox-pro";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export const Homepage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState();
+  let images1;
+  const { openLightbox, closeLightbox } = useLightbox();
   const skills = [
     "Javascript",
     "Typescript",
@@ -32,14 +37,13 @@ export const Homepage = () => {
     "P5js",
     "Processing",
   ];
+
   function useWindowWidth() {
     const [width, setWidth] = useState(window.innerWidth);
-
     useEffect(() => {
       const handleResize = () => setWidth(window.innerWidth);
-
       window.addEventListener("resize", handleResize);
-
+      setImages([]);
       return () => {
         window.removeEventListener("resize", handleResize);
       };
@@ -48,6 +52,19 @@ export const Homepage = () => {
     return width;
   }
   const width = useWindowWidth();
+
+  const handleOpenGallery = ({ images, title }) => {
+    images = images.map((image) => ({
+      src: `./projects/${title}/${image}`,
+      showControls: true,
+    }));
+    setImages(images);
+  };
+
+  useEffect(() => {
+    console.log(images);
+    openLightbox();
+  }, [images]);
 
   return (
     <div id="about">
@@ -103,14 +120,20 @@ export const Homepage = () => {
       <h1 id="projects">Projects</h1>
       <hr className="divider" />
       <FlexContainer width="100%" justifyContent="center" alignItems="center">
-        <Projects projects={ProjectsList} />
+        <Projects
+          projects={ProjectsList}
+          handleOpenGallery={handleOpenGallery}
+        />
       </FlexContainer>
       <br />
       <br />
       <h1 id="projects">Other things I enjoy doing</h1>
       <hr className="divider" />
       <FlexContainer width="100%" justifyContent="center" alignItems="center">
-        <Projects projects={SideProjectsList} />
+        <Projects
+          projects={SideProjectsList}
+          handleOpenGallery={handleOpenGallery}
+        />
       </FlexContainer>
       <br />
       <br />
@@ -136,6 +159,7 @@ export const Homepage = () => {
       </FlexContainer>
       <br />
       <br />
+      <SRLWrapper elements={images} />
     </div>
   );
 };
