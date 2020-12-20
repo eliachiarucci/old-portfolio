@@ -63,11 +63,9 @@ const Projects = ({ projects, handleOpenGallery }) => {
                   OPEN GALLERY
                 </button>
               ) : (
-                <a href={""}>
-                  <button className="btn width-fluid btn-a btn-disabled">
-                    COMING SOON
-                  </button>
-                </a>
+                <button className="btn width-fluid btn-a btn-disabled">
+                  COMING SOON
+                </button>
               )}
             </div>
           </div>
