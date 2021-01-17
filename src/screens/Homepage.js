@@ -153,7 +153,7 @@ export const Homepage = () => {
             pageNumber={1}
           />
         </Document>
-        <a href="EliaChiarucciCV.pdf" target="_blank">
+        <a className="CV_button" href="EliaChiarucciCV.pdf" target="_blank">
           <button className="btn btn-outlined">OPEN CV IN A NEW TAB</button>
         </a>
       </FlexContainer>
