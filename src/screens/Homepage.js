@@ -147,7 +147,7 @@ export const Homepage = () => {
       >
         <Document className="CV" file="EliaChiarucciCV.pdf">
           <Page
-            renderMode="svg"
+            renderMode="canvas"
             width={Math.min(width * 0.9, 1000)}
             renderAnnotationLayer={false}
             pageNumber={1}
