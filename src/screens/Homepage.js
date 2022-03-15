@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FlexContainer from "flexcontainer-react";
-import ProfilePhoto from "../media/photo6.png";
+import ProfilePhoto from "../media/main.jpeg";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import ProjectsList from "../projectslist.json";
@@ -21,11 +21,16 @@ export const Homepage = () => {
     "HTML",
     "CSS",
     "React",
+    "AWS",
+    "Next",
+    "Gatsby",
     "React Native",
     "Express",
     "MongoDB",
     "Node",
+    "Contentful",
     "Electron",
+    "Vercel",
     "Firebase",
     "DigitalOcean",
     "GitHub",
@@ -35,7 +40,6 @@ export const Homepage = () => {
     "PHP",
     "Arduino",
     "P5js",
-    "Processing",
   ];
 
   function useWindowWidth() {
@@ -83,8 +87,8 @@ export const Homepage = () => {
             justifyContent="space-between"
           >
             <a href="#projects">
-              <button className="btn btn-outlined">
-                HAVE A LOOK AT MY PROJECTS
+              <button className="btn btn-large btn-outlined">
+                Have a look at my projects!
               </button>
             </a>
             <FlexContainer
@@ -136,7 +140,12 @@ export const Homepage = () => {
         />
       </FlexContainer>
       <br />
+      <hr className="divider" />
       <br />
+      <h2 id="contact">Contact me at:</h2><p className="title email">elia.chiarucci@gmail.com</p>
+      <br />
+      <br />
+      {/*       
       <h1 id="cv">CV</h1>
       <hr className="divider" />
       <FlexContainer
@@ -159,7 +168,7 @@ export const Homepage = () => {
       </FlexContainer>
       <br />
       <br />
-      <SRLWrapper elements={images} />
+      <SRLWrapper elements={images} /> */}
     </div>
   );
 };

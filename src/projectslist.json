@@ -1,5 +1,32 @@
 [
   {
+    "title": "Morsekey",
+    "technologies": [
+      "React",
+      "Next",
+      "Vercel",
+      "AWS",
+      "MongoDB",
+      "Contentful"
+    ],
+    "shortDescription": "A collection of letters exchanged by radio amateurs all around the globe, searchable by Image content and full text search on OCR scans (Powered by AWS Rekognition).",
+    "images": ["Morsekey"],
+    "multipleImages": false,
+    "date": "2022",
+    "link": "https://morsekey.vercel.app/qsl"
+  },
+  {
+    "title": "AskZeus",
+    "technologies": [
+      "Node"
+    ],
+    "shortDescription": "Ask Zeus for weather reports in your area directly within your terminal!",
+    "images": ["AskZeus"],
+    "multipleImages": false,
+    "date": "2022",
+    "link": "https://github.com/eliachiarucci/AskZeus"
+  },
+  {
     "title": "Tomino",
     "technologies": [
       "React",

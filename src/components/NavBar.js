@@ -20,10 +20,14 @@ const NavBar = () => {
         <div>Projects</div>
         <hr />
       </a>
-      <a className="link" href="#cv">
-        <div>CV</div>
+      <a className="link" href="#contact">
+        <div>Contact</div>
         <hr />
       </a>
+      {/* <a className="link" href="#cv">
+        <div>CV</div>
+        <hr />
+      </a> */}
     </FlexContainer>
   );
 };
