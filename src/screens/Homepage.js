@@ -145,8 +145,8 @@ export const Homepage = () => {
       <h2 id="contact">Contact me at:</h2><p className="title email">elia.chiarucci@gmail.com</p>
       <br />
       <br />
-      {/*       
-      <h1 id="cv">CV</h1>
+            
+{/*       <h1 id="cv">CV</h1>
       <hr className="divider" />
       <FlexContainer
         type="vertical"
@@ -165,10 +165,8 @@ export const Homepage = () => {
         <a className="CV_button" href="EliaChiarucciCV.pdf" target="_blank">
           <button className="btn btn-outlined">OPEN CV IN A NEW TAB</button>
         </a>
-      </FlexContainer>
-      <br />
-      <br />
-      <SRLWrapper elements={images} /> */}
+      </FlexContainer> */}
+      <SRLWrapper elements={images} />
     </div>
   );
 };
