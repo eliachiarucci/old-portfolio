@@ -9,7 +9,7 @@
       "MongoDB",
       "Contentful"
     ],
-    "shortDescription": "A collection of letters exchanged by radio amateurs all around the globe, searchable by Image content and full text search on OCR scans (Powered by AWS Rekognition).",
+    "shortDescription": "A collection of letters exchanged by radio amateurs all around the globe, search by Image content or full-text search on OCR scans (Powered by AWS Rekognition).",
     "images": ["Morsekey"],
     "multipleImages": false,
     "date": "2022",
